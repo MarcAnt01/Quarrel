@@ -211,7 +211,7 @@ namespace Quarrel
                     //SelectHint.Key = VirtualKey.GamePad;
                     MenuHint.Key = VirtualKey.GamepadMenu;
 
-                    if (App.ShowAds) XBOXAd.Visibility = Visibility.Visible;
+                    if (App.ShowAds) XBOXAd.Visibility = Visibility.Collapsed;
                     PCAd.Visibility = Visibility.Collapsed;
                     Dispatcher.AcceleratorKeyActivated += Dispatcher_AcceleratorKeyActivated;
                     sideDrawer.DrawOpenedLeft += SideDrawer_DrawOpenedLeft;
@@ -262,7 +262,7 @@ namespace Quarrel
             {
                 if (App.ShowAds && !App.CinematicMode)
                 {
-                    PCAd.Visibility = Visibility.Visible;
+                    PCAd.Visibility = Visibility.Collapsed;
                     MobileAd.Visibility = Visibility.Collapsed;
                 }
 
@@ -299,7 +299,7 @@ namespace Quarrel
                 if (App.ShowAds && !App.CinematicMode)
                 {
                     PCAd.Visibility = Visibility.Collapsed;
-                    MobileAd.Visibility = Visibility.Visible;
+                    MobileAd.Visibility = Visibility.Collapsed;
                 }
 
                 MemberToggle.Visibility = Visibility.Visible;
@@ -1514,7 +1514,7 @@ namespace Quarrel
                     MemberListFull.Visibility = Visibility.Visible;
                     CallUser.Visibility = Visibility.Collapsed;
                     RenderGuildChannels();
-                    if (App.ShowAds) Ad.Visibility = Visibility.Visible;
+                    if (App.ShowAds) Ad.Visibility = Visibility.Collapsed;
                 }
                 else
                 {
@@ -3449,13 +3449,13 @@ namespace Quarrel
                             {
                                 if (UISize.CurrentState == Large || UISize.CurrentState == ExtraLarge)
                                 {
-                                    PCAd.Visibility = Visibility.Visible;
+                                    PCAd.Visibility = Visibility.Collapsed;
                                     MobileAd.Visibility = Visibility.Collapsed;
                                 }
                                 else
                                 {
                                     PCAd.Visibility = Visibility.Collapsed;
-                                    MobileAd.Visibility = Visibility.Visible;
+                                    MobileAd.Visibility = Visibility.Collapsed;
                                 }
                             }
 
